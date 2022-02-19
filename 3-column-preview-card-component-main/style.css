@@ -1,0 +1,187 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*style*/
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+body {
+	background-color: #eaeaea;
+}
+
+.container {
+	color: white;
+	width: 800px;
+	height: 600px;
+	margin: auto;
+	border-radius: 15px;
+	position: relative;
+}
+
+.column {
+	width: 250px;
+	height: 450px;
+	display: inline-block;
+	float: left;
+	margin-top: 90px;
+	padding: 30px;
+	box-sizing: border-box;
+}
+.satu {
+	background-color: hsl(31, 77%, 52%);
+	display: inline-block;
+	float: left;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	margin-left: 30px;
+}
+.dua {
+	background-color: hsl(184, 100%, 22%);
+	display: inline-block;
+	float: left;
+}
+.tiga {
+	background-color: hsl(179, 100%, 13%);
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.column h1 {
+	font-family: 'Big Shoulders Display', cursive;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 32px;
+	margin-top: 20px;
+	/*letter-spacing: 0.2px;*/
+}
+
+.column p {
+	font-family: 'Lexend Deca', sans-serif;
+	font-weight: 400;
+	font-size: 12px;	
+	margin-top: 20px;
+	line-height: 24px;
+	color: hsla(0, 0%, 100%, 0.75);
+}
+
+.column img {
+	width: 50px;
+	margin-top: 20px;
+}
+
+.cta {
+	margin-top: 90px;
+}
+.btn {
+	font-family: 'Lexend Deca', sans-serif;
+	padding: 9px 20px;
+	border-radius: 20px;
+	/*color: black;*/
+	font-size: 12px;
+	background-color: hsl(0, 0%, 95%);
+	border: 2px solid hsla(0, 0%, 100%, 0.75);
+	
+}
+a {
+	text-decoration: none;
+}
+
+.btn:hover {
+	color: hsla(0, 0%, 100%, 0.75);
+	border-radius: 2px solid white;
+}
+.bt1{color: hsl(31, 77%, 52%);}
+.bt2{color: hsl(184, 100%, 22%);}
+.bt3{color: hsl(179, 100%, 13%);}
+.bt1:hover{background-color: hsl(31, 77%, 52%);}
+.bt2:hover{background-color: hsl(184, 100%, 22%);}
+.bt3:hover{background-color: hsl(179, 100%, 13%);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*font-family: 'Big Shoulders Display', cursive;*/
+/*font-family: 'Lexend Deca', sans-serif;*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*clear fix*/
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
