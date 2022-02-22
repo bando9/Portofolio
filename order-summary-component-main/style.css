@@ -1,0 +1,191 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*style*/
+
+/*import from : https://fonts.google.com/specimen/Red+Hat+Display*/
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+/*- Weights: 500, 700, 900*/
+body {
+	font-size: 16px;
+	font-family: 'Red Hat Display', sans-serif;
+	background-image: url(images/pattern-background-desktop.svg);
+	background-repeat: no-repeat;
+	background-color: hsl(225, 100%, 94%);
+}
+
+.container {
+	margin: auto;
+	width: 350px;
+	height: 530px;
+	border-radius: 20px;
+	background-color: white;
+	margin-top: 50px;
+	text-align: center;
+
+}
+.container img {
+	width: 100%;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.container h1 {
+	font-weight: 900;
+	font-size: 20px;	
+	margin-top: 30px;
+	
+}
+
+.container p {
+	font-weight: 500;
+	font-size: 14px;
+	padding: 20px;
+	color: hsl(224, 23%, 55%);
+	line-height: 20px;
+}
+
+.musik {
+	width: 80%;
+	height: 80px;
+	/*background-color: hsl(225, 100%, 94%);*/
+	background-color: hsl(225, 100%, 98%);
+	margin: auto;
+	border-radius: 15px;
+	padding: 0 10px;
+}
+
+.musik img {
+	width: 40px; 
+	display: inline-block; 
+	float: left;
+	margin-top: 20px;
+	margin-left: 15px;
+}
+
+.musik h2 {
+	font-weight: 700;
+	margin-top: 20px;
+}
+.musik p {
+	margin-top: -15px;
+}
+.musik a {
+	font-weight: 700;
+	font-size: 14px;
+	display: inline-block;
+	float: right;
+	margin-top: 30px;
+	margin-right: 20px;
+}
+
+.musik a:hover {
+	text-decoration: none;
+}
+
+.textm {
+	display: inline-block; 
+	float: left;
+}
+
+.btn {
+	/*background-color: #aaa;*/
+	padding: 13px 30px;
+	margin: auto;
+}
+
+.bt1 {
+	background-color: hsl(245, 75%, 52%);
+	width: 200px;
+	border-radius: 10px;
+	box-shadow: 0 10px 10px #bbb;
+	display: block;
+	color: hsl(225, 100%, 98%);
+}
+.bt1:hover {
+	background-color: hsl(245, 60%, 60%)
+}
+.bt2 {
+	margin-top: 3px;
+	color: hsl(223, 47%, 60%);
+	display: inline-block;
+}
+.bt2:hover {
+	color: hsl(223, 47%, 15%);
+}
+
+.button {
+	/*background-color: #eaeaea;*/
+	margin-top: 15px;
+	
+}
+.button a {
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+
+
+
+
+/*clear fix*/
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
